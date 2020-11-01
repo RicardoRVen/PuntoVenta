@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{450F9022-3F41-48B9-93FA-7797FC92FD73}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PuntoVenta</RootNamespace>
+    <AssemblyName>PuntoVenta</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2">
+      <HintPath>..\..\Componentes Graficos Vb2\SKIN NET 2010 WIN 7\SkinVS.NET\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cadena.cs" />
+    <Compile Include="Encriptar_Desencriptar.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcceso.Designer.cs">
+      <DependentUpon>frmAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCajas.Designer.cs">
+      <DependentUpon>frmCajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConexion.Designer.cs">
+      <DependentUpon>frmConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContrasenas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContrasenas.Designer.cs">
+      <DependentUpon>frmContrasenas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartamentos.Designer.cs">
+      <DependentUpon>frmDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModulo.Designer.cs">
+      <DependentUpon>frmModulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductos.Designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistraUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistraUsuario.Designer.cs">
+      <DependentUpon>frmRegistraUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generales.cs" />
+    <Compile Include="Mensajes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="serAbreTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serAbreTurno.Designer.cs">
+      <DependentUpon>serAbreTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serCierraTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serCierraTurno.Designer.cs">
+      <DependentUpon>serCierraTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serCobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serCobrar.Designer.cs">
+      <DependentUpon>serCobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serDesbloqueo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serDesbloqueo.Designer.cs">
+      <DependentUpon>serDesbloqueo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serRetiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serRetiro.Designer.cs">
+      <DependentUpon>serRetiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ser_CambiaContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ser_CambiaContrasena.Designer.cs">
+      <DependentUpon>Ser_CambiaContrasena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsrCerrar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrCerrar.Designer.cs">
+      <DependentUpon>UsrCerrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsrNumeros.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrNumeros.Designer.cs">
+      <DependentUpon>UsrNumeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XSQL.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCajas.resx">
+      <DependentUpon>frmCajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConexion.resx">
+      <DependentUpon>frmConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcceso.resx">
+      <DependentUpon>frmAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContrasenas.resx">
+      <DependentUpon>frmContrasenas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartamentos.resx">
+      <DependentUpon>frmDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModulo.resx">
+      <DependentUpon>frmModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistraUsuario.resx">
+      <DependentUpon>frmRegistraUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="serAbreTurno.resx">
+      <DependentUpon>serAbreTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serCierraTurno.resx">
+      <DependentUpon>serCierraTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serCobrar.resx">
+      <DependentUpon>serCobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serDesbloqueo.resx">
+      <DependentUpon>serDesbloqueo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serRetiro.resx">
+      <DependentUpon>serRetiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ser_CambiaContrasena.resx">
+      <DependentUpon>Ser_CambiaContrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsrCerrar.resx">
+      <DependentUpon>UsrCerrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsrNumeros.resx">
+      <DependentUpon>UsrNumeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
